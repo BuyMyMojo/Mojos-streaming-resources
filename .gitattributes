@@ -1,6 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-
-git lfs track "*.mp4"
-git lfs track "*.wav"
-git lfs track "*.webm"
+*.webm filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
